@@ -1,0 +1,68 @@
+# Python & Virtual Environment
+bin/
+lib/
+include/
+share/
+pyvenv.cfg
+__pycache__/
+*.pyc
+.Python
+*.egg-info/
+dist/
+build/
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# IDE & OS
+.DS_Store
+.vscode/
+*.swp
+*.swo
+*~
+.idea/
+*.code-workspace
+
+# Statistics & Build Artifacts
+*.prism
+.pytest_cache/
+htmlcov/
+
+# Temporary files
+*.tmp
+*.log
+
+# Project-specific exclusions
+
+# Laboratory organisation (local reference only)
+01_Laboratory-Organisation/
+
+# Large instrument data directories (keep only example data for demonstration)
+02_Instrument-Data/01_Manual-Data/
+02_Instrument-Data/02_Fine-Scale_Sartorius/
+02_Instrument-Data/03_Muffle-Furnace_Chemistry/
+02_Instrument-Data/04_Photometer_Lambda365plus/
+02_Instrument-Data/05_Flow-Cam_Sinki-Vinci/
+02_Instrument-Data/06_Particle-Size-Analyser_Beckman-And-Coulter/
+02_Instrument-Data/07_Zetasizer_Malvern/
+02_Instrument-Data/08_Microscope_Zeiss-Primo-Star/
+02_Instrument-Data/09_Microscope_Zeiss-Primo-Star-ZM/
+02_Instrument-Data/10_Microscope_Zeiss-LSM900/
+02_Instrument-Data/11_Microscope_FEI-Tecnai-Spirit-Bio-Twin/
+02_Instrument-Data/12_Next-Generation-Sequencing/
+02_Instrument-Data/13_Multiplate-Reader_BioTek/
+02_Instrument-Data/14_DNA-Concentration_Nano-Drop/
+02_Instrument-Data/15_GC-MS/
+02_Instrument-Data/16_LC-MS/
+02_Instrument-Data/98_Misc/
+02_Instrument-Data/99_Archive/
+!02_Instrument-Data/00_Example-Data/  # Keep example data for demonstrating measurement workflows
+
+# Large output files (generated locally, can be recreated from notebooks)
+# Keep only example outputs for demonstrating the analysis results
+OUTPUT/*
+!OUTPUT/00_Example-Output/
+!OUTPUT/00_Example-Output/**
+*.tiff
+*.TIFF

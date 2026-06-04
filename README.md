@@ -10,6 +10,7 @@ This project analyzes experimental data from microbial ecology studies, investig
 
 ```
 .
+<<<<<<< HEAD
 ├── 01_Laboratory-Organisation/     # Lab logistics (not in repository)
 ├── 02_Instrument-Data/
 │   ├── 00_Example-Data/            # Example datasets for each measurement method
@@ -37,6 +38,16 @@ This project analyzes experimental data from microbial ecology studies, investig
 
 The complete raw instrument data (~100 GB) is maintained locally and not tracked in version control.
 
+=======
+├── notebooks/              # 12 Jupyter notebooks organized by analysis type
+├── scripts/                # Reusable Python helper modules
+├── data/                   # Input data files (CSV/TSV)
+├── statistics/             # Statistical analysis outputs (Prism files)
+├── requirements.txt        # Python dependencies
+└── Data-Science.code-workspace  # VS Code workspace configuration
+```
+
+>>>>>>> 99ba82e9327fae6f39d9fb7f141f43452028ecd6
 ## Notebooks Guide
 
 ### Physical Properties Analysis
@@ -57,6 +68,7 @@ The complete raw instrument data (~100 GB) is maintained locally and not tracked
 
 ## Data
 
+<<<<<<< HEAD
 ### Example Data
 This repository includes example measurement files from each instrument method in `02_Instrument-Data/00_Example-Data/`:
 - `01_Fine-Scale_Sartorius/` — Gravimetric measurements
@@ -71,6 +83,11 @@ These serve as templates for the expected data format when running the analysis 
 Instrument raw data is organized by measurement date and method:
 - Local directory structure: `02_Instrument-Data/0X_[Instrument-Name]/CHYYMMDD/`
 - Experiments are identified by folder names prefixed with "CH" (e.g., `CH230130`, `CH240114`)
+=======
+### Format
+- **CSV/TSV files** containing experimental measurements and metadata
+- **Data files**: `meta_data.csv`, `backup.csv`
+>>>>>>> 99ba82e9327fae6f39d9fb7f141f43452028ecd6
 
 ### Metadata Structure
 Experiments are identified by:
@@ -138,18 +155,25 @@ Publication-quality visualization functions:
 
 ### Running Notebooks
 
+<<<<<<< HEAD
 1. Navigate to `03_Data-Analysis/02_Workspace/`
 2. Open any notebook from the `notebooks/` folder in Jupyter or VS Code
 3. Select the Python kernel from your virtual environment (with requirements.txt installed)
 4. Run cells sequentially or use "Run All" for complete analysis
 
 **Important**: The notebooks will read data from `02_Instrument-Data/` and write outputs to `OUTPUT/` (at repository root)
+=======
+1. Open any notebook in `notebooks/` folder
+2. Select the Python kernel from the virtual environment
+3. Run cells sequentially or use "Run All" for complete analysis
+>>>>>>> 99ba82e9327fae6f39d9fb7f141f43452028ecd6
 
 ### Development Workflow
 
 1. Start with **Meta-Data.ipynb** to understand the experiment structure
 2. Review **Data-Statistics.ipynb** for comprehensive statistical overview
 3. Run specific analysis notebooks based on your research question
+<<<<<<< HEAD
 4. Check outputs in `OUTPUT/` for generated visualizations
 
 ### Adding Your Own Data
@@ -165,6 +189,15 @@ To add measurement data:
 - **Visualizations**: SVG (editable) and TIFF (print-quality) formats
 - **Processed Data**: CSV/XLSX files in `OUTPUT/Raw-Data/`
 - **Statistical Results**: Organized by analysis type (Boxplots, Heatmaps, PCA, etc.)
+=======
+4. Use `scripts/plot_helper.py` for consistent visualization across notebooks
+
+## Output
+
+- **Visualizations**: Generated within notebooks and exported as figures
+- **Statistical Results**: Saved to `statistics/` folder, including Prism files for additional analysis
+- **Processed Data**: Intermediate results stored in notebook outputs
+>>>>>>> 99ba82e9327fae6f39d9fb7f141f43452028ecd6
 
 ## Project Status
 

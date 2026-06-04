@@ -22,7 +22,10 @@ build/
 *.swo
 *~
 .idea/
+<<<<<<< HEAD
 *.code-workspace
+=======
+>>>>>>> 99ba82e9327fae6f39d9fb7f141f43452028ecd6
 
 # Statistics & Build Artifacts
 *.prism
@@ -32,6 +35,7 @@ htmlcov/
 # Temporary files
 *.tmp
 *.log
+<<<<<<< HEAD
 
 # Project-specific exclusions
 
@@ -66,3 +70,5 @@ OUTPUT/*
 !OUTPUT/00_Example-Output/**
 *.tiff
 *.TIFF
+=======
+>>>>>>> 99ba82e9327fae6f39d9fb7f141f43452028ecd6

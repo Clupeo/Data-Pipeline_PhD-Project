@@ -38,34 +38,31 @@ htmlcov/
 # Laboratory organisation (local reference only)
 01_Laboratory-Organisation/
 
-# Old OUTPUT structure (migrate to OUTPUT/)
-04_Output/
-
 # Large instrument data directories (keep only 00_Example-Data)
-02_Instrument-Data/01_Manual-Data/
-02_Instrument-Data/02_Fine-Scale_Sartorius/
-02_Instrument-Data/03_Muffle-Furnace_Chemistry/
-02_Instrument-Data/04_Photometer_Lambda365plus/
-02_Instrument-Data/05_Flow-Cam_Sinki-Vinci/
-02_Instrument-Data/06_Particle-Size-Analyser_Beckman-And-Coulter/
-02_Instrument-Data/07_Zetasizer_Malvern/
-02_Instrument-Data/08_Microscope_Zeiss-Primo-Star/
-02_Instrument-Data/09_Microscope_Zeiss-Primo-Star-ZM/
-02_Instrument-Data/10_Microscope_Zeiss-LSM900/
-02_Instrument-Data/11_Microscope_FEI-Tecnai-Spirit-Bio-Twin/
-02_Instrument-Data/12_Next-Generation-Sequencing/
-02_Instrument-Data/13_Multiplate-Reader_BioTek/
-02_Instrument-Data/14_DNA-Concentration_Nano-Drop/
-02_Instrument-Data/15_GC-MS/
-02_Instrument-Data/16_LC-MS/
-02_Instrument-Data/98_Misc/
-02_Instrument-Data/99_Archive/
-!02_Instrument-Data/00_Example-Data/
+01_Instrument-Data/01_Manual-Data/
+01_Instrument-Data/02_Fine-Scale_Sartorius/
+01_Instrument-Data/03_Muffle-Furnace_Chemistry/
+01_Instrument-Data/04_Photometer_Lambda365plus/
+01_Instrument-Data/05_Flow-Cam_Sinki-Vinci/
+01_Instrument-Data/06_Particle-Size-Analyser_Beckman-And-Coulter/
+01_Instrument-Data/07_Zetasizer_Malvern/
+01_Instrument-Data/08_Microscope_Zeiss-Primo-Star/
+01_Instrument-Data/09_Microscope_Zeiss-Primo-Star-ZM/
+01_Instrument-Data/10_Microscope_Zeiss-LSM900/
+01_Instrument-Data/11_Microscope_FEI-Tecnai-Spirit-Bio-Twin/
+01_Instrument-Data/12_Next-Generation-Sequencing/
+01_Instrument-Data/13_Multiplate-Reader_BioTek/
+01_Instrument-Data/14_DNA-Concentration_Nano-Drop/
+01_Instrument-Data/15_GC-MS/
+01_Instrument-Data/16_LC-MS/
+01_Instrument-Data/98_Misc/
+01_Instrument-Data/99_Archive/
+!01_Instrument-Data/00_Example-Data/
 
 # Large output files (keep only 00_Example-Output)
-OUTPUT/*
-!OUTPUT/00_Example-Output/
-!OUTPUT/00_Example-Output/**
+03_Output/*
+!03_Output/00_Example-Output/
+!03_Output/00_Example-Output/**
 
 # Large image files
 *.tiff

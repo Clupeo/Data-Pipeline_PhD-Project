@@ -22,10 +22,7 @@ build/
 *.swo
 *~
 .idea/
-<<<<<<< HEAD
 *.code-workspace
-=======
->>>>>>> 99ba82e9327fae6f39d9fb7f141f43452028ecd6
 
 # Statistics & Build Artifacts
 *.prism
@@ -35,14 +32,16 @@ htmlcov/
 # Temporary files
 *.tmp
 *.log
-<<<<<<< HEAD
 
 # Project-specific exclusions
 
 # Laboratory organisation (local reference only)
 01_Laboratory-Organisation/
 
-# Large instrument data directories (keep only example data for demonstration)
+# Old OUTPUT structure (migrate to OUTPUT/)
+04_Output/
+
+# Large instrument data directories (keep only 00_Example-Data)
 02_Instrument-Data/01_Manual-Data/
 02_Instrument-Data/02_Fine-Scale_Sartorius/
 02_Instrument-Data/03_Muffle-Furnace_Chemistry/
@@ -61,14 +60,13 @@ htmlcov/
 02_Instrument-Data/16_LC-MS/
 02_Instrument-Data/98_Misc/
 02_Instrument-Data/99_Archive/
-!02_Instrument-Data/00_Example-Data/  # Keep example data for demonstrating measurement workflows
+!02_Instrument-Data/00_Example-Data/
 
-# Large output files (generated locally, can be recreated from notebooks)
-# Keep only example outputs for demonstrating the analysis results
+# Large output files (keep only 00_Example-Output)
 OUTPUT/*
 !OUTPUT/00_Example-Output/
 !OUTPUT/00_Example-Output/**
+
+# Large image files
 *.tiff
 *.TIFF
-=======
->>>>>>> 99ba82e9327fae6f39d9fb7f141f43452028ecd6

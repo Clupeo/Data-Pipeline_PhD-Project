@@ -88,7 +88,7 @@ The pipeline consists of 11 specialized notebooks, each targeting a specific sci
 | **Sinking-Properties** | Combined radar plots for multi-variate view | All |
 | **Taxa-Distribution** | NGS community heatmaps | **Full Only** |
 | **Taxa-Variance** | NGS PCA analysis & variance decomposition | **Full Only** |
-| **Data-Statistics** | ANOVA / t-test across measurements | **Full Only**** |
+| **Data-Statistics** | ANOVA / t-test across measurements | **Full Only** |
 | **EPS-Analysis** | Extracellular polymeric substances quantification | **Full Only** |
 
 ---

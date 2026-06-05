@@ -1,9 +1,34 @@
 import os
+import yaml
 import pandas as pd
 
+def load_config(config_path=None):
+    """
+    Loads the configuration from a YAML file.
+    Automatically finds the project root if config_path is not provided.
+    """
+    if config_path is None:
+        # Assuming we are in 02_Data-Analysis/02_Workspace/scripts
+        # Project root is 3 levels up
+        current_dir = os.path.dirname(os.path.abspath(__file__))
+        project_root = os.path.abspath(os.path.join(current_dir, "../../.."))
+        config_path = os.path.join(project_root, "analysis_config.yaml")
+    
+    with open(config_path, 'r') as f:
+        config = yaml.safe_load(f)
+    
+    # Resolve relative paths to absolute paths
+    mode = config['data_mode']
+    project_root = os.path.dirname(os.path.abspath(config_path))
+    
+    config['resolved_paths'] = {}
+    for key, val in config['paths'][mode].items():
+        config['resolved_paths'][key] = os.path.abspath(os.path.join(project_root, val))
+        
+    return config
 
-def create_filelist(files_dir, skip):
-    df_meta_id = pd.read_csv("../data/meta_data.csv").ID
+def create_filelist(files_dir, skip, meta_path):
+    df_meta_id = pd.read_csv(meta_path).ID
 
     filtered_files = []   
     # walk over every file in instrument directory 

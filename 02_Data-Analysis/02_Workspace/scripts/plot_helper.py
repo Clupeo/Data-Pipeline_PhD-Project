@@ -5,22 +5,16 @@ import seaborn as sns
 from math import pi
 from matplotlib.ticker import FormatStrFormatter
 import statsmodels.api as sm
+from .constants import DARK_COLOR, MID_COLOR, LIGHT_COLOR, LABEL_FONTSIZE
 
-# Show regular expression in non-italic format - TODO Not working yet!
+# Show regular expression in non-italic format
 mpl.rcParams['mathtext.default'] = 'regular'
 
-# Change font to Arial
-# from matplotlib import rc
-# font = {'size'   : 16}
-# mpl.rc('font', **font)
-# mpl.rcParams['font.sans-serif'] = "Comic Sans MS"
-# mpl.rcParams['font.family'] = "sans-serif"
+dark_color = DARK_COLOR
+mid_color = MID_COLOR
+light_color = LIGHT_COLOR
 
-dark_color = "#464646"
-mid_color = "#969696"
-light_color = "#DCDCDC"
-
-label_fontsize = 20 # 20 default for thesis - disputation: 25?
+label_fontsize = LABEL_FONTSIZE
 
 def check_timepoints(timepoints, base_color = light_color):
     # Change layout, if experiment is time-driven
@@ -55,10 +49,20 @@ def format_extratext(plot, n):
     # Insert n = n right top of the plot
     #plot.text(0.895, 1.01 , "n = " + str(n), transform = plot.transAxes, fontsize = 20)
     return plot
-def save_plot(plot, file_name):
+def save_plot(plot, file_name, config=None):
+    # Determine base output path
+    if config:
+        base_output = config['resolved_paths']['output_dir']
+    else:
+        # Fallback for old code
+        base_output = os.path.abspath(os.path.join(os.path.dirname(__file__), "../../../03_Output"))
+    
+    full_path = os.path.join(base_output, file_name)
+    os.makedirs(os.path.dirname(full_path), exist_ok=True)
+    
     # Export each file to tiff and svg image
-    plot.get_figure().savefig("../../OUTPUT/" + file_name + ".svg", bbox_inches = "tight")
-    plot.get_figure().savefig("../../OUTPUT/" + file_name + ".tiff", bbox_inches = "tight")
+    plot.get_figure().savefig(full_path + ".svg", bbox_inches = "tight")
+    plot.get_figure().savefig(full_path + ".tiff", bbox_inches = "tight")
     return plt.close()
 
 

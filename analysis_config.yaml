@@ -1,23 +1,40 @@
 # Configuration for PhD Data Analysis Pipeline
-# data_mode: "example" (uses 01_Instrument-Data/00_Example-Data) 
-#            "full"    (uses 01_Instrument-Data/ - requires full dataset)
+# data_mode: "example" — uses 00_Example-Data (portfolio / showcase)
+#            "full"    — uses complete local instrument dataset
 data_mode: "example"
 
 paths:
   example:
     input_dir: "01_Instrument-Data/00_Example-Data"
-    output_dir: "03_Output"
+    output_dir: "03_Output/00_Example-Output"
     meta_data: "02_Data-Analysis/02_Workspace/data/meta_data.csv"
-  
+    experiment_ids:
+      - CH230130
+
   full:
     input_dir: "01_Instrument-Data"
     output_dir: "03_Output"
     meta_data: "02_Data-Analysis/02_Workspace/data/meta_data.csv"
+    experiment_ids: null
 
-# Global plotting settings
+instruments:
+  fine_scale: "01_Fine-Scale_Sartorius"
+  photometer: "04_Photometer_Lambda365plus"
+  flowcam: "05_Flow-Cam_Sinki-Vinci"
+  particle_size: "06_Particle-Size-Analyser_Beckman-And-Coulter"
+  zetasizer: "07_Zetasizer_Malvern"
+  ngs: "12_Next-Generation-Sequencing"
+
+master_files:
+  tss_vss: "01_Fine-Scale_Sartorius/CH_Master/CH_Master_TSS+VSS.xlsx"
+  eps: "01_Fine-Scale_Sartorius/CH_Master/CH_Master_EPS.xlsx"
+  particle_size: "06_Particle-Size-Analyser_Beckman-And-Coulter/CH_Master_PSA.xlsx"
+
 plotting:
   style: "seaborn-v0_8-ticks"
   label_fontsize: 20
   title_fontsize: 15
   dpi: 100
-  formats: ["svg", "tiff"]
+  formats:
+    - svg
+    - tiff

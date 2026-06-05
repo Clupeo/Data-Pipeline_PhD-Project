@@ -1,6 +1,13 @@
 # Python & Virtual Environment
 bin/
 lib/
+02_Data-Analysis/02_Workspace/bin/
+02_Data-Analysis/02_Workspace/lib/
+02_Data-Analysis/02_Workspace/pyvenv.cfg
+02_Data-Analysis/02_Workspace/refactor_notebooks.py
+02_Data-Analysis/02_Workspace/run_example_pipeline.py
+.venv312/
+.venv/
 include/
 share/
 pyvenv.cfg

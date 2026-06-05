@@ -2,7 +2,7 @@
 
 This interactive Jupyter notebook pipeline analyzes microalgae–bacteria consortia with a specific focus on sinking properties and community composition. The project is part of the doctoral thesis **[Characterization of floc-forming and fast-sedimenting microalgae-bacteria consortia in bioremediation](https://macau.uni-kiel.de/receive/macau_mods_00005694)** by **Dr. Cedric Hering-Peter**, conducted at the Plant Cell Physiology and Biotechnology group, Kiel University (2021–2025).
 
-> **Note on Data Scope:** This repository showcases the full analytical workflow using example data. Due to large file sizes, raw metagenomic sequencing (NGS) data is excluded; however, the complete pipeline structure and additional manual example outputs are included for verification.
+> **Note on Data Scope:** This repository showcases the full analytical workflow using example data. Due to large file sizes, raw metagenomic sequencing (NGS) data is excluded. However, the complete pipeline structure and additional manual example outputs are included for verification.
 
 ---
 
@@ -121,11 +121,12 @@ The pipeline consists of 11 specialized notebooks, each targeting a specific sci
 
 The pipeline employs a cohesive scientific visualization scheme to ensure clarity and reproducibility across publications and portfolios.
 
-Category	Visualization Type	Key Metrics
-Physical Properties	Scatter & Boxplots	Size, Velocity, Zeta Potential
-Community Dynamics	Heatmaps & PCA	Taxa abundance, Variance explained
-Process Efficiency	Bar & Line Charts	Recovery rates, Sinking flux
-Statistical Validation	Table & Error Bars	P-values, Confidence Intervals
+| Kategorie | Visualisierungstyp | Schlüsselkennzahlen |
+|-----------|-------------------|---------------------|
+| Physikalische Eigenschaften | Streuung & Boxplots | Größe, Geschwindigkeit, Zeta-Potential |
+| Gemeinschaftsdynamik | Heatmaps & PCA | Taxa-Häufigkeit, erklärte Varianz |
+| Prozesseffizienz | Balken- & Liniendiagramme | Rückgewinnungsraten, Sinkflus |
+| Statistische Validierung | Tabelle & Fehlerbalken | p-Werte, Konfidenzintervalle |
 
 ### Usage Guidelines:
 
@@ -137,11 +138,11 @@ Ensure axis labels include units (e.g., m/h, µm, %) for immediate readability.
 
 ## Version Info
 
-Last Updated: June, 2026
-Status: Released
-Python: 3.10+
-Jupyter: Compatible with Lab & VS Code
-Data: Example (Remote), Full (Local)
+- Last Updated: June, 2026
+- Status: Released
+- Python: 3.10+
+- Jupyter: Compatible with Lab & VS Code
+- Data: Example (Remote), Full (Local)
 
 ---
 

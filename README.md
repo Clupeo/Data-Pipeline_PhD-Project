@@ -88,7 +88,7 @@ The pipeline consists of 11 specialized notebooks, each targeting a specific sci
 | **Sinking-Properties** | Combined radar plots for multi-variate view | All |
 | **Taxa-Distribution** | NGS community heatmaps | **Full Only** |
 | **Taxa-Variance** | NGS PCA analysis & variance decomposition | **Full Only** |
-| **Data-Statistics** | ANOVA / t-test across measurements | All |
+| **Data-Statistics** | ANOVA / t-test across measurements | **Full Only**** |
 | **EPS-Analysis** | Extracellular polymeric substances quantification | **Full Only** |
 
 ---
@@ -121,12 +121,12 @@ The pipeline consists of 11 specialized notebooks, each targeting a specific sci
 
 The pipeline employs a cohesive scientific visualization scheme to ensure clarity and reproducibility across publications and portfolios.
 
-| Kategorie | Visualisierungstyp | Schlüsselkennzahlen |
-|-----------|-------------------|---------------------|
-| Physikalische Eigenschaften | Streuung & Boxplots | Größe, Geschwindigkeit, Zeta-Potential |
-| Gemeinschaftsdynamik | Heatmaps & PCA | Taxa-Häufigkeit, erklärte Varianz |
-| Prozesseffizienz | Balken- & Liniendiagramme | Rückgewinnungsraten, Sinkflus |
-| Statistische Validierung | Tabelle & Fehlerbalken | p-Werte, Konfidenzintervalle |
+| Category | Visualization Type | Key Metrics |
+|----------|-------------------|-------------|
+| Physical Properties | Boxplots | Particle Size, Sinking Velocity, Recovery Rate, Zeta Potential |
+| Community Dynamics | Heatmaps & PCA | Taxa abundance, Variance explained |
+| Process Efficiency | Bar & Line Charts | Suspended Solids |
+| Statistical Validation | Table & Error Bars | P-values, Confidence Intervals |
 
 ### Usage Guidelines:
 
